@@ -1,0 +1,21 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml
+
+' LAYOUT_TOP_DOWN()
+' LAYOUT_AS_SKETCH()
+LAYOUT_WITH_LEGEND()
+
+title Диаграмма проекта "Система учета и списания подарочных сертификатов/бонусная система"
+
+Person(клиент, клиент, "покупатель")
+
+Container(front, "Приложение фронт", "", "Фронт офисная система, взаимодействие с клиентами")
+Container(back, "Приложение бэк", "", "База основного учета, центр данных")
+
+
+Rel(клиент, front, "Uses", "")
+Rel(front, back, "Uses", "HTTPS/TCP")
+Rel(back, клиент, "Uses", "email/SMS")
+@enduml
