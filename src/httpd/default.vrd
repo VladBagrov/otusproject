@@ -3,8 +3,7 @@
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		base="/back"
-		ib="File=&quot;C:\Users\Admin\Documents\InfoBase4&quot;;"
-		allowexecutescheduledjobs="">
+		ib="File=&quot;C:\Users\Admin\Documents\InfoBase4&quot;;">
 	<ws enable="false"
 			pointEnableCommon="false">
 		<point name="MAExchange"
